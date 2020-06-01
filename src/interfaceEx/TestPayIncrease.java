@@ -7,9 +7,6 @@ public class TestPayIncrease {
         workers [1] = new Contractor("Max");
         workers [2] = new Employee(" John");
 
-            Employee currentEmployee;
-            Contractor currentContractor;
-
         for (Person p: workers){
 
             if (p instanceof Employee){
@@ -18,7 +15,6 @@ public class TestPayIncrease {
             if (p instanceof Contractor){
                 ((Contractor) p).increasePay(30);
             }
-
         }
     }
 }

@@ -6,6 +6,6 @@ public class Person {
         this.name = name;
     }
     public String getName(){
-        return "interfaceEx.Person's name is " + name;
+        return "Person's name is " + name;
     }
 }
