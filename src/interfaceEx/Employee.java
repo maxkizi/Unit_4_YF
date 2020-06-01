@@ -1,3 +1,5 @@
+package interfaceEx;
+
 public class Employee extends Person implements Payable {
     Employee (String name){
         super(name);

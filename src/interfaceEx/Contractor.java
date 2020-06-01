@@ -1,5 +1,6 @@
+package interfaceEx;
+
 public class Contractor extends Person implements Payable {
-    String name;
 
     Contractor (String name){
     super(name);
@@ -7,8 +8,8 @@ public class Contractor extends Person implements Payable {
 
     @Override
     public boolean increasePay(int percent) {
-        if (percent > INCREASE_CAP){
-            System.out.println("Sorry, can't increase your hourly rate by more than " + Payable.INCREASE_CAP);
+        if (percent > Payable.INCREASE_CAP){
+            System.out.println("Sorry, " + name + ", can't increase your hourly rate by more than " + Payable.INCREASE_CAP);
             return false;
         }
         else {
